@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Project - PHP56</title>
+        <link href="css/fonts.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/nouislider.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/fontawesome-stars.css" />
+        <link rel="stylesheet" href="css/select2.min.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link rel="stylesheet" href="css/lightgallery.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="ps-header--center header--mobile">
+                <div class="container">
+                    <div class="header-inner">
+                        <div class="header-inner__left"></div>
+                        <div class="header-inner__center">
+                            <a class="logo open" href="">Tam<span class="text-black">Nguyen</span></a>
+                        </div>
+                        <div class="header-inner__right">
+                            <button class="button-icon icon-sm search-mobile"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="header-inner__right">
+                            <button class="navbar-toggler"><i class="fa fa-user"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="ps-header--center header-desktop">
+                <div class="container">
+                    <div class="header-inner">
+                        <div class="header-inner__left">
+                            <a class="logo" href="">Tam<span class="text-black">Nguyen</span></a>
+                            <ul class="menu">
+                                <li class="menu-item-has-children has-mega-menu">
+                                    <button class="category-toggler"><i class="fa fa-bars"></i></button>
+                                    <div class="mega-menu mega-menu-category">
+                                        <ul class="menu--mobile menu--horizontal">
+                                            <li class="daily-deals category-item"><a href="#">Daily Deals</a></li>
+                                            <li class="category-item"><a href="#">Top Promotions</a></li>
+                                            <li class="category-item"><a class="active" href="#">New Arrivals</a></li>
+                                            <li class="has-mega-menu category-item">
+                                                <a href="javascript:void(0);">Fresh</a><span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
+                                                <div class="mega-menu">
+                                                    <div class="mega-anchor"></div>
+                                                    <div class="mega-menu__column">
+                                                        <h4>Fruit<span class="sub-toggle"></span></h4>
+                                                        <ul class="sub-menu--mega">
+                                                            <li><a href="#">Apples</a></li>
+                                                            <li class="see-all">
+                                                                <a href="#">See all products <i class="fa fa-chevron-right"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mega-menu__column">
+                                                        <h4>Vegetables<span class="sub-toggle"></span></h4>
+                                                        <ul class="sub-menu--mega">
+                                                            <li><a href="#">Potatoes</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-inner__center">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="header-search-select">
+                                        <span class="current">All<i class="fa fa-chevron-down"></i></span>
+                                        <ul class="list">
+                                            <li class="category-option active" data-value="option"><a href="javascript:void(0);">All</a></li>
+                                            <li class="category-option">
+                                                <a>Fresh</a><span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
+                                                <ul>
+                                                    <li><a href="#">Meat &amp; Poultry</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="category-option">
+                                                <a>Food Cupboard</a><span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
+                                                <ul>
+                                                    <li><a href="#">Crisps, Snacks &amp; Nuts</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <i class="fa fa-search search"></i>
+                                </div>
+                                <input class="form-control input-search" placeholder="I'm searchching for..." />
+                                <div class="input-group-append">
+                                    <button class="btn">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-inner__right">
+                            <div class="button-icon btn-cart-header">
+                                <i class="fa fa-shopping-cart icon-shop5"></i><span class="badge bg-warning">3</span>
+                                <div class="mini-cart">
+                                    <div class="mini-cart--content">
+                                        <div class="mini-cart--overlay"></div>
+                                        <div class="mini-cart--slidebar cart--box">
+                                            <div class="mini-cart__header">
+                                                <div class="cart-header-title">
+                                                    <h5>Shopping Cart(3)</h5>
+                                                    <a class="close-cart" href="javascript:void(0);"><i class="icon-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="mini-cart__products">
+                                                <div class="out-box-cart">
+                                                    <div class="triangle-box">
+                                                        <div class="triangle"></div>
+                                                    </div>
+                                                </div>
+                                                <ul class="list-cart">
+                                                    <li class="cart-item">
+                                                        <div class="ps-product--mini-cart">
+                                                            <a href="#"><img class="ps-product__thumbnail" src="images/01_18a.jpg" alt="alt" /></a>
+                                                            <div class="ps-product__content">
+                                                                <a class="ps-product__name" href="#">Extreme Budweiser Light Can</a>
+                                                                <p class="ps-product__unit">500g</p>
+                                                                <p class="ps-product__meta"><span class="ps-product__price">$3.90</span><span class="ps-product__quantity">(x1)</span></p>
+                                                            </div>
+                                                            <div class="ps-product__remove"><i class="fa fa-trash-o"></i></div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="cart-item">
+                                                        <div class="ps-product--mini-cart">
+                                                            <a href="#"><img class="ps-product__thumbnail" src="images/01_31a.jpg" alt="alt" /></a>
+                                                            <div class="ps-product__content">
+                                                                <a class="ps-product__name" href="#">Honest Organic Still Lemonade</a>
+                                                                <p class="ps-product__unit">100g</p>
+                                                                <p class="ps-product__meta"><span class="ps-product__price-sale">$5.99</span><span class="ps-product__is-sale">$8.99</span><span class="quantity">(x1)</span></p>
+                                                            </div>
+                                                            <div class="ps-product__remove"><i class="fa fa-trash-o"></i></div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="cart-item">
+                                                        <div class="ps-product--mini-cart">
+                                                            <a href="#"><img class="ps-product__thumbnail" src="images/01_16a.jpg" alt="alt" /></a>
+                                                            <div class="ps-product__content">
+                                                                <a class="ps-product__name" href="#">Matures Own 100% Wheat</a>
+                                                                <p class="ps-product__unit">1.5L</p>
+                                                                <p class="ps-product__meta"><span class="ps-product__price">$12.90</span><span class="ps-product__quantity">(x1)</span></p>
+                                                            </div>
+                                                            <div class="ps-product__remove"><i class="fa fa-trash-o"></i></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="mini-cart__footer row">
+                                                <div class="col-6 title">TOTAL</div>
+                                                <div class="col-6 text-right total">$29.98</div>
+                                                <div class="col-12 d-flex"><a class="view-cart" href="#">View cart</a><a class="checkout" href="#">Checkout</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-icon btn-user-header">
+                                <i class="fa fa-user"></i>
+                                <div class="mini-user">
+                                    <div class="mini-user--content">
+                                        <div class="mini-user--overlay"></div>
+                                        <div class="mini-user--slidebar cart--box">
+                                            <div class="mini-user__footer row">
+                                                <div class="col-12 d-flex"><a class="login" href="#">Login</a><a class="logout" href="#">Logout</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="mobile-search--slidebar">
+                <div class="mobile-search--content">
+                    <div class="mobile-search__header">
+                        <div class="mobile-search-box">
+                            <div class="input-group">
+                                <input class="form-control" placeholder="I'm shopping for..." id="inputSearchMobile" />
+                                <div class="input-group-append">
+                                    <button class="btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                            <button class="cancel-search"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="no-main">
+            <div class="ps-breadcrumb">
+                <div class="container">
+                    <ul class="ps-breadcrumb__list">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Fresh</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <section class="section-shop shop-categories--default">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <div class="ps-shop--sidebar">
+                                <div class="sidebar__category">
+                                    <div class="sidebar__title">ALL CATEGORIES</div>
+                                    <ul class="menu--mobile">
+                                        <li class="daily-deals category-item"><a href="#">LG</a></li>
+                                        <li class="category-item"><a href="#">Samsung</a></li>
+                                        <li class="category-item"><a href="#">Tosiba</a></li>
+                                        <li class="menu-item-has-children category-item"><a href="#">Iphone</a><span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">IP 12</a></li>
+                                                <li><a href="#">IP 13</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-9">
+                            <div class="category__top">
+                                <div class="category__header">
+                                    <h3 class="category__name">Fresh</h3>
+                                    <div class="category__search">
+                                        <form action="#">
+                                            <div class="input-group">
+                                                <input class="form-control" type="text" placeholder="Search in Fresh...">
+                                                <div class="input-group-append"><i class="icon-magnifier"></i></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result__header">
+                                <h4 class="title">35<span>Product Found</span></h4>
+                                <div class="page">page
+                                    <input type="text" value="1" disabled="">of 3
+                                </div>
+                            </div>
+                            <div class="result__header mobile">
+                                <h4 class="title">35<span>Product Found</span></h4>
+                            </div>
+                            <div class="result__content mt-4">
+                                <div class="section-shop--grid">
+                                    <div class="row m-0">
+                                        <div class="col-6 col-md-4 col-lg-3 p-0">
+                                            <div class="ps-product--standard"><a href="#"><img class="ps-product__thumbnail" src="images/01_17a.jpg" alt="alt"></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">32% Off </span>
+                                                <div class="ps-product__content">
+                                                    <p class="ps-product__type"><i class="fa fa-shopping-basket"></i>Farmart</p>
+                                                    <h5><a class="ps-product__name" href="#">Tomato Nature Sweet Glor</a></h5>
+                                                    <p class="ps-product__unit">300g</p>
+                                                    <div class="ps-product__rating">
+                                                        <div class="br-wrapper br-theme-fontawesome-stars"><select class="rating-stars" style="display: none;">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5" selected="selected">5</option>
+                                                        </select><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected"></a><a href="#" data-rating-value="2" data-rating-text="2" class="br-selected"></a><a href="#" data-rating-value="3" data-rating-text="3" class="br-selected"></a><a href="#" data-rating-value="4" data-rating-text="4" class="br-selected"></a><a href="#" data-rating-value="5" data-rating-text="5" class="br-selected br-current"></a><div class="br-current-rating">5</div></div></div><span>(14)</span>
+                                                    </div>
+                                                    <p class="ps-product-price-block"><span class="ps-product__sale">$20.00</span><span class="ps-product__price">$12.00</span>
+                                                    </p>
+                                                </div>
+                                                <div class="ps-product__footer">
+                                                    <div class="def-number-input number-input safari_only">
+                                                        <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fa fa-minus"></i></button>
+                                                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                                        <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fa fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="ps-product__total">Total: <span>$20.00</span>
+                                                    </div>
+                                                    <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-3 p-0">
+                                            <div class="ps-product--standard"><a href="#"><img class="ps-product__thumbnail" src="images/01_17a.jpg" alt="alt"></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">32% Off </span>
+                                                <div class="ps-product__content">
+                                                    <p class="ps-product__type"><i class="fa fa-shopping-basket"></i>Farmart</p>
+                                                    <h5><a class="ps-product__name" href="#">Tomato Nature Sweet Glor</a></h5>
+                                                    <p class="ps-product__unit">300g</p>
+                                                    <div class="ps-product__rating">
+                                                        <div class="br-wrapper br-theme-fontawesome-stars"><select class="rating-stars" style="display: none;">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5" selected="selected">5</option>
+                                                        </select><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected"></a><a href="#" data-rating-value="2" data-rating-text="2" class="br-selected"></a><a href="#" data-rating-value="3" data-rating-text="3" class="br-selected"></a><a href="#" data-rating-value="4" data-rating-text="4" class="br-selected"></a><a href="#" data-rating-value="5" data-rating-text="5" class="br-selected br-current"></a><div class="br-current-rating">5</div></div></div><span>(14)</span>
+                                                    </div>
+                                                    <p class="ps-product-price-block"><span class="ps-product__sale">$20.00</span><span class="ps-product__price">$12.00</span>
+                                                    </p>
+                                                </div>
+                                                <div class="ps-product__footer">
+                                                    <div class="def-number-input number-input safari_only">
+                                                        <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fa fa-minus"></i></button>
+                                                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                                        <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fa fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="ps-product__total">Total: <span>$20.00</span>
+                                                    </div>
+                                                    <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-3 p-0">
+                                            <div class="ps-product--standard"><a href="#"><img class="ps-product__thumbnail" src="images/01_17a.jpg" alt="alt"></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">32% Off </span>
+                                                <div class="ps-product__content">
+                                                    <p class="ps-product__type"><i class="fa fa-shopping-basket"></i>Farmart</p>
+                                                    <h5><a class="ps-product__name" href="#">Tomato Nature Sweet Glor</a></h5>
+                                                    <p class="ps-product__unit">300g</p>
+                                                    <div class="ps-product__rating">
+                                                        <div class="br-wrapper br-theme-fontawesome-stars"><select class="rating-stars" style="display: none;">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5" selected="selected">5</option>
+                                                        </select><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected"></a><a href="#" data-rating-value="2" data-rating-text="2" class="br-selected"></a><a href="#" data-rating-value="3" data-rating-text="3" class="br-selected"></a><a href="#" data-rating-value="4" data-rating-text="4" class="br-selected"></a><a href="#" data-rating-value="5" data-rating-text="5" class="br-selected br-current"></a><div class="br-current-rating">5</div></div></div><span>(14)</span>
+                                                    </div>
+                                                    <p class="ps-product-price-block"><span class="ps-product__sale">$20.00</span><span class="ps-product__price">$12.00</span>
+                                                    </p>
+                                                </div>
+                                                <div class="ps-product__footer">
+                                                    <div class="def-number-input number-input safari_only">
+                                                        <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fa fa-minus"></i></button>
+                                                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                                        <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fa fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="ps-product__total">Total: <span>$20.00</span>
+                                                    </div>
+                                                    <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-3 p-0">
+                                            <div class="ps-product--standard"><a href="#"><img class="ps-product__thumbnail" src="images/01_17a.jpg" alt="alt"></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">32% Off </span>
+                                                <div class="ps-product__content">
+                                                    <p class="ps-product__type"><i class="fa fa-shopping-basket"></i>Farmart</p>
+                                                    <h5><a class="ps-product__name" href="#">Tomato Nature Sweet Glor</a></h5>
+                                                    <p class="ps-product__unit">300g</p>
+                                                    <div class="ps-product__rating">
+                                                        <div class="br-wrapper br-theme-fontawesome-stars"><select class="rating-stars" style="display: none;">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5" selected="selected">5</option>
+                                                        </select><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected"></a><a href="#" data-rating-value="2" data-rating-text="2" class="br-selected"></a><a href="#" data-rating-value="3" data-rating-text="3" class="br-selected"></a><a href="#" data-rating-value="4" data-rating-text="4" class="br-selected"></a><a href="#" data-rating-value="5" data-rating-text="5" class="br-selected br-current"></a><div class="br-current-rating">5</div></div></div><span>(14)</span>
+                                                    </div>
+                                                    <p class="ps-product-price-block"><span class="ps-product__sale">$20.00</span><span class="ps-product__price">$12.00</span>
+                                                    </p>
+                                                </div>
+                                                <div class="ps-product__footer">
+                                                    <div class="def-number-input number-input safari_only">
+                                                        <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fa fa-minus"></i></button>
+                                                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                                        <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fa fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="ps-product__total">Total: <span>$20.00</span>
+                                                    </div>
+                                                    <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-3 p-0">
+                                            <div class="ps-product--standard"><a href="#"><img class="ps-product__thumbnail" src="images/01_17a.jpg" alt="alt"></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">32% Off </span>
+                                                <div class="ps-product__content">
+                                                    <p class="ps-product__type"><i class="fa fa-shopping-basket"></i>Farmart</p>
+                                                    <h5><a class="ps-product__name" href="#">Tomato Nature Sweet Glor</a></h5>
+                                                    <p class="ps-product__unit">300g</p>
+                                                    <div class="ps-product__rating">
+                                                        <div class="br-wrapper br-theme-fontawesome-stars"><select class="rating-stars" style="display: none;">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5" selected="selected">5</option>
+                                                        </select><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected"></a><a href="#" data-rating-value="2" data-rating-text="2" class="br-selected"></a><a href="#" data-rating-value="3" data-rating-text="3" class="br-selected"></a><a href="#" data-rating-value="4" data-rating-text="4" class="br-selected"></a><a href="#" data-rating-value="5" data-rating-text="5" class="br-selected br-current"></a><div class="br-current-rating">5</div></div></div><span>(14)</span>
+                                                    </div>
+                                                    <p class="ps-product-price-block"><span class="ps-product__sale">$20.00</span><span class="ps-product__price">$12.00</span>
+                                                    </p>
+                                                </div>
+                                                <div class="ps-product__footer">
+                                                    <div class="def-number-input number-input safari_only">
+                                                        <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fa fa-minus"></i></button>
+                                                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                                        <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fa fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="ps-product__total">Total: <span>$20.00</span>
+                                                    </div>
+                                                    <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-3 p-0">
+                                            <div class="ps-product--standard"><a href="#"><img class="ps-product__thumbnail" src="images/01_17a.jpg" alt="alt"></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">32% Off </span>
+                                                <div class="ps-product__content">
+                                                    <p class="ps-product__type"><i class="fa fa-shopping-basket"></i>Farmart</p>
+                                                    <h5><a class="ps-product__name" href="#">Tomato Nature Sweet Glor</a></h5>
+                                                    <p class="ps-product__unit">300g</p>
+                                                    <div class="ps-product__rating">
+                                                        <div class="br-wrapper br-theme-fontawesome-stars"><select class="rating-stars" style="display: none;">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5" selected="selected">5</option>
+                                                        </select><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected"></a><a href="#" data-rating-value="2" data-rating-text="2" class="br-selected"></a><a href="#" data-rating-value="3" data-rating-text="3" class="br-selected"></a><a href="#" data-rating-value="4" data-rating-text="4" class="br-selected"></a><a href="#" data-rating-value="5" data-rating-text="5" class="br-selected br-current"></a><div class="br-current-rating">5</div></div></div><span>(14)</span>
+                                                    </div>
+                                                    <p class="ps-product-price-block"><span class="ps-product__sale">$20.00</span><span class="ps-product__price">$12.00</span>
+                                                    </p>
+                                                </div>
+                                                <div class="ps-product__footer">
+                                                    <div class="def-number-input number-input safari_only">
+                                                        <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fa fa-minus"></i></button>
+                                                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                                        <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fa fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="ps-product__total">Total: <span>$20.00</span>
+                                                    </div>
+                                                    <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-3 p-0">
+                                            <div class="ps-product--standard"><a href="#"><img class="ps-product__thumbnail" src="images/01_17a.jpg" alt="alt"></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">32% Off </span>
+                                                <div class="ps-product__content">
+                                                    <p class="ps-product__type"><i class="fa fa-shopping-basket"></i>Farmart</p>
+                                                    <h5><a class="ps-product__name" href="#">Tomato Nature Sweet Glor</a></h5>
+                                                    <p class="ps-product__unit">300g</p>
+                                                    <div class="ps-product__rating">
+                                                        <div class="br-wrapper br-theme-fontawesome-stars"><select class="rating-stars" style="display: none;">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5" selected="selected">5</option>
+                                                        </select><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected"></a><a href="#" data-rating-value="2" data-rating-text="2" class="br-selected"></a><a href="#" data-rating-value="3" data-rating-text="3" class="br-selected"></a><a href="#" data-rating-value="4" data-rating-text="4" class="br-selected"></a><a href="#" data-rating-value="5" data-rating-text="5" class="br-selected br-current"></a><div class="br-current-rating">5</div></div></div><span>(14)</span>
+                                                    </div>
+                                                    <p class="ps-product-price-block"><span class="ps-product__sale">$20.00</span><span class="ps-product__price">$12.00</span>
+                                                    </p>
+                                                </div>
+                                                <div class="ps-product__footer">
+                                                    <div class="def-number-input number-input safari_only">
+                                                        <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fa fa-minus"></i></button>
+                                                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                                        <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fa fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="ps-product__total">Total: <span>$20.00</span>
+                                                    </div>
+                                                    <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ps-pagination blog--pagination">
+                                    <ul class="pagination">
+                                        <li class="chevron"><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li class="chevron"><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-flashdeal--default ps-home--block">
+                <div class="container">
+                    <div class="ps-block__header">
+                        <h3 class="ps-block__title">
+                            <i class="icon-power"></i>News
+                        </h3>
+                        <a class="ps-block__view" href="#">View all<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                    <div class="flashdeal--content">
+                        <div
+                            class="owl-carousel owl-loaded owl-drag"
+                            data-owl-auto="true"
+                            data-owl-loop="true"
+                            data-owl-speed="5000"
+                            data-owl-gap="0"
+                            data-owl-nav="true"
+                            data-owl-dots="true"
+                            data-owl-item="6"
+                            data-owl-item-xs="2"
+                            data-owl-item-sm="2"
+                            data-owl-item-md="3"
+                            data-owl-item-lg="6"
+                            data-owl-duration="1000"
+                            data-owl-mousedrag="on"
+                        >
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1340px;">
+                                    <div class="owl-item active" style="width: 191.333px;">
+                                        <div class="ps-post--related">
+                                            <div class="post__img">
+                                                <a href="blog-default.html"><img src="img/blogs/blog_default_5.jpg" alt="alt" /></a>
+                                            </div>
+                                            <div class="post__content">
+                                                <div class="post__archives">
+                                                    <a class="archive__item post__type" href="vendor-store.html"><i class="icon-folder"></i>Family</a><span class="archive__item"><i class="icon-bubbles"></i>214</span>
+                                                </div>
+                                                <a class="post__title" href="blog-default.html">The Biggest Problem With Food, And How You Can Fix It</a>
+                                                <p class="post__des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 191.333px;">
+                                        <div class="ps-post--related">
+                                            <div class="post__img">
+                                                <a href="blog-default.html"><img src="img/blogs/blog_default_5.jpg" alt="alt" /></a>
+                                            </div>
+                                            <div class="post__content">
+                                                <div class="post__archives">
+                                                    <a class="archive__item post__type" href="vendor-store.html"><i class="icon-folder"></i>Family</a><span class="archive__item"><i class="icon-bubbles"></i>214</span>
+                                                </div>
+                                                <a class="post__title" href="blog-default.html">The Biggest Problem With Food, And How You Can Fix It</a>
+                                                <p class="post__des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 191.333px;">
+                                        <div class="ps-post--related">
+                                            <div class="post__img">
+                                                <a href="blog-default.html"><img src="img/blogs/blog_default_5.jpg" alt="alt" /></a>
+                                            </div>
+                                            <div class="post__content">
+                                                <div class="post__archives">
+                                                    <a class="archive__item post__type" href="vendor-store.html"><i class="icon-folder"></i>Family</a><span class="archive__item"><i class="icon-bubbles"></i>214</span>
+                                                </div>
+                                                <a class="post__title" href="blog-default.html">The Biggest Problem With Food, And How You Can Fix It</a>
+                                                <p class="post__des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 191.333px;">
+                                        <div class="ps-post--related">
+                                            <div class="post__img">
+                                                <a href="blog-default.html"><img src="img/blogs/blog_default_5.jpg" alt="alt" /></a>
+                                            </div>
+                                            <div class="post__content">
+                                                <div class="post__archives">
+                                                    <a class="archive__item post__type" href="vendor-store.html"><i class="icon-folder"></i>Family</a><span class="archive__item"><i class="icon-bubbles"></i>214</span>
+                                                </div>
+                                                <a class="post__title" href="blog-default.html">The Biggest Problem With Food, And How You Can Fix It</a>
+                                                <p class="post__des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 191.333px;">
+                                        <div class="ps-post--related">
+                                            <div class="post__img">
+                                                <a href="blog-default.html"><img src="img/blogs/blog_default_5.jpg" alt="alt" /></a>
+                                            </div>
+                                            <div class="post__content">
+                                                <div class="post__archives">
+                                                    <a class="archive__item post__type" href="vendor-store.html"><i class="icon-folder"></i>Family</a><span class="archive__item"><i class="icon-bubbles"></i>214</span>
+                                                </div>
+                                                <a class="post__title" href="blog-default.html">The Biggest Problem With Food, And How You Can Fix It</a>
+                                                <p class="post__des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 191.333px;">
+                                        <div class="ps-post--related">
+                                            <div class="post__img">
+                                                <a href="blog-default.html"><img src="img/blogs/blog_default_5.jpg" alt="alt" /></a>
+                                            </div>
+                                            <div class="post__content">
+                                                <div class="post__archives">
+                                                    <a class="archive__item post__type" href="vendor-store.html"><i class="icon-folder"></i>Family</a><span class="archive__item"><i class="icon-bubbles"></i>214</span>
+                                                </div>
+                                                <a class="post__title" href="blog-default.html">The Biggest Problem With Food, And How You Can Fix It</a>
+                                                <p class="post__des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 191.333px;">
+                                        <div class="ps-post--related">
+                                            <div class="post__img">
+                                                <a href="blog-default.html"><img src="img/blogs/blog_default_5.jpg" alt="alt" /></a>
+                                            </div>
+                                            <div class="post__content">
+                                                <div class="post__archives">
+                                                    <a class="archive__item post__type" href="vendor-store.html"><i class="icon-folder"></i>Family</a><span class="archive__item"><i class="icon-bubbles"></i>214</span>
+                                                </div>
+                                                <a class="post__title" href="blog-default.html">The Biggest Problem With Food, And How You Can Fix It</a>
+                                                <p class="post__des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 191.333px;">
+                                        <div class="ps-post--related">
+                                            <div class="post__img">
+                                                <a href="blog-default.html"><img src="img/blogs/blog_default_5.jpg" alt="alt" /></a>
+                                            </div>
+                                            <div class="post__content">
+                                                <div class="post__archives">
+                                                    <a class="archive__item post__type" href="vendor-store.html"><i class="icon-folder"></i>Family</a><span class="archive__item"><i class="icon-bubbles"></i>214</span>
+                                                </div>
+                                                <a class="post__title" href="blog-default.html">The Biggest Problem With Food, And How You Can Fix It</a>
+                                                <p class="post__des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-nav">
+                                <button type="button" role="presentation" class="owl-prev disabled"><i class="fa fa-chevron-left"></i></button>
+                                <button type="button" role="presentation" class="owl-next"><i class="fa fa-chevron-right"></i></button>
+                            </div>
+                            <div class="owl-dots">
+                                <button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-recent--default ps-home--block">
+                <div class="container">
+                    <div class="recent__content"></div>
+                </div>
+            </section>
+        </main>
+        <footer class="ps-footer">
+            <div class="container">
+                <div class="ps-footer--contact">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <p class="contact__title">Contact Us</p>
+                            <p>
+                                <b><i class="fa fa-phone"> </i>Hotline: </b><span>(7:00 - 21:30)</span>
+                            </p>
+                            <p class="telephone">
+                                097 978-6290<br />
+                                097 343-8888
+                            </p>
+                            <p><b>Head office: </b>8049 High Ridge St. Saint Joseph, MI 49085</p>
+                            <p><b>Email us: </b>support@farmart.com</p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <p class="contact__title">
+                                        Help &amp; Info<span class="footer-toggle"><i class="fa fa-chevron-down"></i></span>
+                                    </p>
+                                    <ul class="footer-list">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Sore Locations</a></li>
+                                        <li><a href="#">Terms of Use</a></li>
+                                        <li><a href="#">Policy</a></li>
+                                        <li><a href="#">Flash Sale</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                    </ul>
+                                    <hr />
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <p class="contact__title">
+                                        Corporate<span class="footer-toggle"><i class="fa fa-chevron-down"></i></span>
+                                    </p>
+                                    <ul class="footer-list">
+                                        <li><a href="#">Become a Vendor</a></li>
+                                        <li><a href="#">Affiliate Program</a></li>
+                                        <li><a href="#">Farm Business</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Our Suppliers</a></li>
+                                        <li><a href="#">Accessibility</a></li>
+                                    </ul>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ps-footer__copyright">
+                    <div class="col-12 col-lg-6 ps-footer__text">© 2020 Farmart Marhetplace. All Rights Reversed.</div>
+                    <div class="col-12 col-lg-6 ps-footer__social">
+                        <a class="icon_social facebook" href="#"><i class="fa fa-facebook-f"></i></a><a class="icon_social twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        <a class="icon_social google" href="#"><i class="fa fa-google-plus"></i></a><a class="icon_social youtube" href="#"><i class="fa fa-youtube"></i></a><a class="icon_social wifi" href="#"><i class="fa fa-wifi"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="ps-footer-mobile">
+            <div class="menu__content">
+                <ul class="menu--footer">
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i class="fa fa-home"></i><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-category" href="javascript:void(0);"><i class="fa fa-list-ul"></i><span>Category</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-cart" href="#"><i class="fa fa-shopping-cart"></i><span class="badge bg-warning">3</span><span>Cart</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="btn scroll-top" style="display: none;"><i class="fa fa-chevron-up"></i></button>
+        <div class="ps-preloader deactive" id="preloader">
+            <div class="ps-preloader-section ps-preloader-left"></div>
+            <div class="ps-preloader-section ps-preloader-right"></div>
+        </div>
+        <div class="ps-category--mobile">
+            <div class="category__header">
+                <div class="category__title">All Departments</div>
+                <span class="category__close"><i class="fa fa-times"></i></span>
+            </div>
+            <div class="category__content">
+                <ul class="menu--mobile">
+                    <li class="daily-deals category-item"><a href="#">Daily Deals</a></li>
+                    <li class="category-item"><a href="#">Top Promotions</a></li>
+                    <li class="category-item"><a href="#">New Arrivals</a></li>
+                    <li class="menu-item-has-children category-item">
+                        <a href="#">Fresh</a><span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
+                        <ul class="sub-menu">
+                            <li><a href="#">Meat &amp; Poultry</a></li>
+                            <li><a href="#">Fruit</a></li>
+                            <li><a href="#">Vegetables</a></li>
+                            <li><a href="#">Milks, Butter &amp; Eggs</a></li>
+                            <li><a href="#">Fish</a></li>
+                            <li><a href="#">Frozen</a></li>
+                            <li><a href="#">Cheese</a></li>
+                            <li><a href="#">Pasta &amp; Sauce</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navigation--mobile">
+            <div class="navigation__header">
+                <div class="navigation-title">
+                    <button class="close-navbar-slide"><i class="fa fa-arrow-left"></i></button>
+                    <div class="">
+                        <span> <i class="icon-user"></i>Xin chào, </span><span class="account">Tâm Nguyễn</span>
+                        <a class="dropdown-user" href="#" id="dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-chevron-down"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownAccount" style="will-change: transform;">
+                            <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i>Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.matchHeight-min.js"></script>
+        <script src="js/jquery.barrating.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/lightgallery-all.min.js"></script>
+        <script src="js/nouislider.min.js"></script>
+        <!-- custom code-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
